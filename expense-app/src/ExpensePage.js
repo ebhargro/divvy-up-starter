@@ -79,8 +79,8 @@ const ExpensePage = () => {
   // Filter friends based on search term
   const filteredFriends = friends.filter(
     (friend) =>
-      friend.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      friend.lastName.toLowerCase().includes(searchTerm.toLowerCase())
+      friend.firstName.toLowerCase()?.includes(searchTerm.toLowerCase()) ||
+      friend.lastName.toLowerCase()?.includes(searchTerm.toLowerCase())
   );
 
   return (
